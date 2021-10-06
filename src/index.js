@@ -3,16 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { CartProvider } from './providers/cart';
-import { CatalogueProvider } from './providers/catalogue';
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <CartProvider>
-      <CatalogueProvider>
         <App />
-      </CatalogueProvider>
-    </CartProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -26,7 +26,7 @@ const ProductList = ({ type }) => {
           cart.map((item, index) => (
             <List key={index}>
               {item.name} 
-              i<Button type={type} item={item} />
+              <Button type={type} item={item} />
             </List>
           ))}
       </Container>
